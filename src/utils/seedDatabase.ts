@@ -20,7 +20,7 @@ const seedDatabase = async () => {
         });
       })
     .on('end', async () => {
-        console.log('Data to insert:', results); 
+       // console.log('Data to insert:', results); 
       // Insert each movie into the database
       for (const movie of results) {
         try {
@@ -36,5 +36,5 @@ const seedDatabase = async () => {
     });
 };
 
-// Execute the seeding function
+// Executed the seeding function
 seedDatabase().catch(console.error);

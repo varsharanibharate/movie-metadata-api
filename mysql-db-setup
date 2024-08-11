@@ -1,0 +1,14 @@
+USE moviedb;
+
+CREATE DATABASE moviedb;
+
+CREATE TABLE movies (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  genre TEXT,
+  release_date DATE,
+  description TEXT
+);
+
+SELECT * FROM movies;
+
